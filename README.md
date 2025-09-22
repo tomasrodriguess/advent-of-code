@@ -17,21 +17,16 @@ Each year lives in its own directory with a consistent structure:
 
 ```
 ├─ 2023/
-│ ├─ java/
-│ │ ├─ day01/solution.java
-│ │ └─ day01/resources/input.txt
-│ ├─ test/
-│ │ ├─ day01/...
-│ │ └─ day02/...
+│ ├─ day01/solution.java
+│ └─ day01/resources/input.txt
 ├─ 2024/
 │ └─ ...
 ```
 
 **Why this layout?**
 - **Per-year** folders keep AoC editions isolated.
-- **`java/dayXX/solution.java`**: one place per day for code.
+- **`dayXX/solution.java`**: one place per day for code.
 - **`resources/input.txt`**: personal puzzle input next to the solution.
-- **`test/dayXX/`**: tests/samples without over-engineering.
 
 > If a day needs helpers (parsers, grid utils, etc.), add extra files in the same `dayXX/` folder (e.g., `Parser.java`, `Utils.java`). Keep it local and simple.
 
@@ -48,7 +43,7 @@ From the year folder, compile and run a specific day:
 
 ```bash
 # Example for 2023/day01
-cd 2023/java/day01
+cd 2023/day01
 
 # compile
 javac solution.java
@@ -57,24 +52,6 @@ javac solution.java
 java solution
 ```
 
----
-
-## 🧪 Tests
-
-I keep tests simple and close to the solutions. Each year has a `test/` folder mirroring the days:
-
-```
-2023/
- ├─ java/day01/solution.java
- └─ test/day01/TestDay01.java
-```
-
-How to run the test
-```bash
-cd 2023/test/day01
-javac -cp ../../java/day01 TestDay01.java
-java -cp .:../../java/day01 TestDay01
-```
 ---
 
 ## 💡 Why Java for this repo?
