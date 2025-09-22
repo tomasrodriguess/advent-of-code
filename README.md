@@ -18,7 +18,8 @@ Each year lives in its own directory with a consistent structure:
 ```
 ├─ 2023/
 │ ├─ java/
-│ │ ├─ day01/solution.java
+│ │ ├─ day01/Part1.java
+│ │ ├─ day01/Part2.java
 │ │ └─ day01/resources/input.txt
 │ ├─ test/
 │ │ ├─ day01/...
@@ -29,7 +30,7 @@ Each year lives in its own directory with a consistent structure:
 
 **Why this layout?**
 - **Per-year** folders keep AoC editions isolated.
-- **`java/dayXX/solution.java`**: one place per day for code.
+- **`java/dayXX/Part1.java`**: one place per day for code.
 - **`resources/input.txt`**: personal puzzle input next to the solution.
 - **`test/dayXX/`**: tests/samples without over-engineering.
 
