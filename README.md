@@ -46,11 +46,12 @@ From the year folder, compile and run a specific day:
 cd 2023/day01
 
 # compile
-javac solution.java
+javac -d out *.java
 
 # run (default: reads resources/input.txt)
-java solution
+java -cp .\out day01.Part1
 ```
+Change the command as necessary to match your requirements.
 
 ---
 
@@ -64,4 +65,5 @@ I chose **Java** as my main language here because:
 * 🌍 Java runs anywhere with a JDK, so solutions stay portable.
 
 This isn’t about the fastest one-liner solutions—it’s about **growing as a software engineer** while solving fun puzzles.
+
 

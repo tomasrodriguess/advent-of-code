@@ -1,3 +1,4 @@
+package day01;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
