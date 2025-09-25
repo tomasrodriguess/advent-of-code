@@ -7,8 +7,7 @@ public class Part2 {
      public static void main(String[] args) {
         try {
             int solution = 0;
-            List<List<Character>> input = Utils.readInput("C:\\Users\\tomas\\Desktop\\Personal\\advent-of-code\\2024\\day04\\resources\\input.txt");
-            // List<List<Character>> input = Utils.readInput("resources/input.txt");
+            List<List<Character>> input = Utils.readInput("resources/input.txt");
 
 
             for (int i = 0; i < input.size(); i++){
@@ -30,8 +29,6 @@ public class Part2 {
             Character bottom_left = matrix.get(x-1).get(y+1);
             Character bottom_right = matrix.get(x+1).get(y+1);
             Character upper_right = matrix.get(x+1).get(y-1);
-            System.out.println(upper_left+" " +upper_right);
-            System.out.println(bottom_left+" " +bottom_right);
             if(
                 upper_left == upper_right
                 &&
@@ -43,7 +40,6 @@ public class Part2 {
                     (upper_left == 'S' && bottom_left == 'M')
                 )
             ){  
-                System.out.println("yes");
                 return true;
             }else if(
                 upper_left == bottom_left
@@ -56,7 +52,6 @@ public class Part2 {
                     (upper_left == 'S' && upper_right == 'M')
                 )
             ){
-                System.out.println("yes");
                 return true;
             }
         }catch(IndexOutOfBoundsException e){
