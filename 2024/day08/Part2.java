@@ -16,8 +16,7 @@ public class Part2 {
     public static void main(String[] args) throws Exception {
         try {
             int solution = 0;
-            // List<List<Character>> input = Utils.readInput("resources/input.txt");
-            List<List<Character>> input = Utils.readInput("C:\\Users\\tomas\\Desktop\\Personal\\advent-of-code\\2024\\day08\\resources\\input.txt");
+            List<List<Character>> input = Utils.readInput("resources/input.txt");
             int H = input.size();
             int W = input.get(0).size();
             Map<Character, List<Point>> antenas = findAntenas(input);
