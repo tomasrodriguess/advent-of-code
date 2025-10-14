@@ -10,8 +10,7 @@ public class Part2 {
     public static void main(String[] args) throws Exception {
         try {
             long solution = 0L;
-            // List<String> input = Utils.readInput("resources/input.txt");
-            List<String> input = Utils.readInput("C:\\Users\\tomas\\Desktop\\Personal\\advent-of-code\\2024\\day09\\resources\\input.txt");
+            List<String> input = Utils.readInput("resources/input.txt");
 
             List<String> mappingFormated = formatIds(input);
             
