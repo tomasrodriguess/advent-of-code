@@ -9,8 +9,7 @@ public class Part1 {
     public static void main(String[] args) throws Exception {
         try {
             int solution = 0;
-            // List<Integer> input = Utils.readInput("resources/input.txt");
-            List<Long> input = Utils.readInput("C:\\Users\\tomas\\Desktop\\Personal\\advent-of-code\\2024\\day11\\resources\\input.txt");
+            List<Long> input = Utils.readInput("resources/input.txt");
 
             for( int i = 0; i<25;i++){
                 input = treatStonesGroup(input);
